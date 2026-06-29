@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelería Estudiantil</title>
+
+```
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS Personalizado -->
+<link rel="stylesheet" href="css/estilos.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Menú -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Papelería Estudiantil</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#quienes">Quiénes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Encabezado -->
+<header class="hero text-center text-white">
+    <div class="container">
+        <h1>Papelería Estudiantil</h1>
+        <p class="lead">Todo lo que necesitas para tus actividades escolares y de oficina.</p>
+        <a href="#productos" class="btn btn-warning btn-lg">Ver Productos</a>
+    </div>
+</header>
+
+<main class="container mt-5">
+
+    <!-- Inicio -->
+    <section id="inicio" class="mb-5">
+        <h2 class="text-center mb-4">Inicio</h2>
+        <p class="text-center">
+            Bienvenido a Papelería Estudiantil. Nuestro objetivo es ofrecer productos escolares y de oficina de calidad para estudiantes, docentes y profesionales.
+        </p>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="quienes" class="mb-5">
+        <h2 class="text-center mb-4">Quiénes Somos</h2>
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b"
+                    alt="Materiales escolares"
+                    class="img-fluid rounded shadow">
+            </div>
+
+            <div class="col-md-6">
+                <p>
+                    Papelería Estudiantil es un emprendimiento dedicado a la venta de útiles escolares,
+                    materiales de oficina y artículos para el desarrollo académico. Nuestro proyecto nace con la finalidad de brindar productos de calidad a precios accesibles para estudiantes, docentes y profesionales.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="mb-5">
+
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cuadernos</h5>
+                        <p class="card-text">
+                            Cuadernos universitarios y escolares de excelente calidad.
+                        </p>
+                        <button class="btn btn-primary">Más Información</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lápices y Esferográficos</h5>
+                        <p class="card-text">
+                            Amplia variedad de útiles de escritura.
+                        </p>
+                        <button class="btn btn-success">Más Información</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Material de Oficina</h5>
+                        <p class="card-text">
+                            Carpetas, archivadores, papel y suministros.
+                        </p>
+                        <button class="btn btn-danger">Más Información</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Registro Dinámico de Productos -->
+ <section id="registro" class="container mb-5">
+    <h2 class="text-center mb-4">Registrar Producto</h2>
+
+    <form id="formProducto" class="row g-3">
+
+        <div class="col-md-5">
+            <input type="text"
+                   id="nombreProducto"
+                   class="form-control"
+                   placeholder="Nombre del producto"
+                   required>
+        </div>
+
+        <div class="col-md-4">
+            <input type="number"
+                   id="precioProducto"
+                   class="form-control"
+                   placeholder="Precio"
+                   required>
+        </div>
+
+        <div class="col-md-3">
+            <button type="submit"
+                    class="btn btn-primary w-100">
+                Agregar Producto
+            </button>
+        </div>
+
+    </form>
+
+    <div class="mt-4">
+        <h4>Productos Registrados</h4>
+        <ul id="listaProductos" class="list-group"></ul>
+    </div>
+</section>
+
+Antes de cerrar la etiqueta </body>, agrega esta línea:
+
+<script src="script.js"></script>
+
+    <!-- Video -->
+    <section class="mb-5">
+        <h2 class="text-center mb-4">Video Informativo</h2>
+
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/1AzOgd-RGNo"
+                title="Video Informativo"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Promociones -->
+    <aside class="alert alert-info">
+        <h4>Promoción Especial</h4>
+        <p>Descuento del 10% en útiles escolares durante el inicio del año lectivo.</p>
+
+        <h4>Horario de Atención</h4>
+        <p>
+            Lunes a Viernes: 08h00 - 18h00<br>
+            Sábados: 08h00 - 13h00
+        </p>
+    </aside>
+
+    <!-- Contacto -->
+    <section id="contacto" class="mb-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+
+        <div class="card shadow">
+            <div class="card-body">
+                <p><strong>Correo:</strong> salazarleodan@gmail.com</p>
+                <p><strong>Teléfono:</strong> 0987082512</p>
+                <p><strong>Dirección:</strong> Alausí, Chimborazo, Ecuador</p>
+
+                <p>
+                    <strong>Redes Sociales:</strong>
+                    <a href="https://facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white text-center p-3">
+    <p>Leodan Salazar | Desarrollo de Aplicaciones Web | 2026</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+```
+
+</body>
+
+</html>
